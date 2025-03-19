@@ -3,7 +3,7 @@ package pizza;
 public class Topping {
     private int weight;
     private String name;
-    static private double modifier = 1;
+    private double modifier = 1;
     static final private double CALORIES_PER_GRAM = 2;
 
     public Topping(String name, int weight, double modifier) {
@@ -13,6 +13,9 @@ public class Topping {
         this.weight = weight;
         this.modifier = modifier;
     }
+
+    public Topping() { this("Generic topping", 10, 1); }
+
     /**
      * Calculates calories according to equation
      * weight * CALORIES_PER_GRAM * modifier

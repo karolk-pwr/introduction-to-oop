@@ -8,7 +8,8 @@ public class PizzaTester {
         toppings.add(new Cheese("Mozzarella", 10));
         toppings.add(new Meat("Pepperoni", 30));
         toppings.add(new Veggies("Onion", 10));
-        toppings.add(new Topping("Mushrooms", 15, 1.1));
+        toppings.add(new Topping("Mushrooms", 15, 0.95));
+        toppings.add(new Topping("Olives", 8, 0.7));
         Pizza pizza = new Pizza("My first pizza", "White", 100, toppings);
         System.out.println(pizza);
         System.out.println("Pizza contains " + pizza.calculateCalories() + " cal");
